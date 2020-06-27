@@ -9,11 +9,11 @@ def run_guessing_game
     puts "You guessed the correct number!"
   elsif user_input.to_i != random_number
     puts "Sorry! The computer guessed #{random_number}."
-  elsif user_input.to_s == "exit"
+  else user_input.to_s == "exit"
     puts "Goodbye!"
-  else
-    puts "Invalid command."
-    run_guessing_game
+  #else
+    #puts "Invalid command."
+   # run_guessing_game
   end
 end
 
